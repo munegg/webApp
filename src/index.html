@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" ng-controller="AppController">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <title ng-bind="title"></title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<nav-bar></nav-bar>
+<div ui-view="home" ng-show="type === 'home'"></div>
+<div ui-view="author" ng-show="type === 'author'"></div>
+<div ui-view="content" ng-show="type === 'content'"></div>
+<div ui-view="my" ng-show="type === 'my'"></div>
+<tab-bar></tab-bar>
+
+<script src="lib/angular/angular.js"></script>
+<script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

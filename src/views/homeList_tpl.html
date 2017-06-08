@@ -1,0 +1,25 @@
+<div class="home-list" ng-repeat="item in posts.posts">
+    <span ng-if="item.column.name" ng-bind="item.column.name">去远方</span>
+    <h4 ng-bind="item.title">生活不止眼前的苟且，还有诗和远方的田野</h4>
+
+    <div class="post1" ng-if="item.type==='1001'" >
+        <p ng-bind="item.abstract">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est in libero modi nesciunt quae repudiandae voluptas. Est eveniet fugiat nostrum saepe tempora ullam vel. At eaque ex nisi odio quod.</p>
+    </div>
+
+    <div class="post2"  ng-if="item.type==='1004'">
+        <div class="txt">
+            <p ng-bind="item.abstract">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequatur culpa deleniti dignissimos dolorem dolores eveniet odit quam, similique sint suscipit velit veniam voluptates? Beatae laboriosam minima mollitia qui? Ab.</p>
+        </div>
+        <div class="imgs">
+            <img src="./images/tabicon/post_1.png" alt="">
+        </div>
+    </div>
+
+    <div class="post3" ng-if="item.type==='1003'">
+        <ul>
+            <li><img src="./images/tabicon/post_3.png" alt=""></li>
+            <li><img src="./images/tabicon/post_4.png" alt=""></li>
+            <li><img src="./images/tabicon/post_5.png" alt=""></li>
+        </ul>
+    </div>
+</div>
